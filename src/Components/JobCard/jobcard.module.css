@@ -1,0 +1,57 @@
+.Container {
+  padding: 2rem 0;
+  padding-left: 2rem;
+}
+.Wrap {
+  background-color: white;
+  width: 100%;
+  position: relative;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: inherit;
+}
+@media only screen and (max-width:425px){
+  .Wrap{
+    width: 85%;
+    margin: auto;
+    margin-bottom: 4rem;
+  }
+}
+.Container > * {
+  padding: 1rem 0;
+}
+.Img {
+  position: absolute;
+  top: -3rem;
+  left: 2rem;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.4rem;
+}
+.Country {
+  font-weight: 700;
+  padding-bottom: 4rem;
+  color: #5964e0;
+}
+.Time {
+  opacity: 0.8;
+}
+.Contract{
+    position: relative;
+    margin-left: 1.5rem;
+}
+.Contract::before {
+  position: absolute;
+  top: 45%;
+  left: -1.2rem;
+  content: "";
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
